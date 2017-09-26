@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="chat.js"></script>
+	</head>
+	<body onload="init()">
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="wallpage.php">Go to wall</a>
+    </div>
+    
+      
+           
+  </div>
+</nav>
+		<div id="recent_chats" style="height:300px;background-color:black">
+			<div id="pic">
+			</div>
+			<button class="btn btn-info" id="chat" style="position:absolute;top:100px;right:50px">Check if online</button>
+		</div>
+		<div id="chatbox" style="border:5px ridge plum;height:300px;width:400px;overflow-y:scroll;border-radius:0.5em;position:absolute;left:500px;top:400px"> <p class="badge">Chat here </p>
+			<span id="end" class="glyphicon glyphicon-remove-sign pull-right" style="color:red"></span><br>
+			<input type="textbox" id="msg" placeholder="Type here"/><p></p>
+			<button class="btn btn-success" type="submit" id="send" onclick="send()">Send</button><br>
+		</div>
+		<div id="online" style="border:5px ridge plum;height:400px;width:250px;overflow-y:scroll;border-radius:0.5em;position:absolute;top:300px;right:10px;">
+		</div>
+	</body>
+</html>

@@ -1,0 +1,5 @@
+1.user- uid,fname,lname,birthdate,email,password
+2.in_out- login_time,logout_time,uid
+3.message- uid,rid,sent_time,rcv_time,content
+4.scribble- uid,post_time,content
+5.friends_with- uid,fid
